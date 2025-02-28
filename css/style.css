@@ -345,6 +345,9 @@
      nav.navbar .navbar-brand{
          margin-top: 0;
     }
+    nav.navbar .navbar-brand img.logo{
+        width: 100px;
+   }
      nav.navbar .navbar-brand{
          margin-top: 0;
     }
@@ -401,10 +404,13 @@
          position: relative;
          top: -2px;
     }
-     nav.navbar .navbar-brand img.logo{
-         width: 160px;
+    nav.navbar .navbar-brand img.logo{
+         width: 90px;
     }
-     .attr-nav > ul > li > a{
+    .cover-slides h1{
+        font-size: 50px !important;
+   }
+    .attr-nav > ul > li > a{
          padding: 16px 15px 15px;
     }
     /* Navbar Mobile slide ------*/
@@ -527,6 +533,9 @@
      color: #006994;
 }
  @media (min-width: 1024px) {
+    #slides-shop {
+        height: 500px !important;
+    }
      nav.navbar.navbar-inverse ul.nav .dropdown-menu{
          background-color: #222 !important;
          border-left: solid 1px #303030 !important;
@@ -555,6 +564,9 @@
     }
 }
  @media (max-width: 992px) {
+    #slides-shop {
+        height: 450px !important;
+    }
      nav.navbar.navbar-inverse .navbar-toggle{
          color: #eee;
          background-color: #222 !important;
@@ -588,6 +600,9 @@
  @media (max-width: 767px) {
      nav.navbar.navbar-inverse.navbar-mobile ul.nav{
          border-top: solid 1px #222;
+    }
+    #slides-shop {
+        height: 350px !important;
     }
 }
  .arrow::before{
@@ -1502,7 +1517,7 @@
 }
 /*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
  .all-title-box{
-     background: url("../images/all-bg-title.jpg") no-repeat center center;
+     background: url("../images/banner4.jpg") no-repeat center center;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -ms-background-size: cover;
@@ -1551,6 +1566,7 @@
 }
  .about-box-main{
      padding: 70px 0px;
+    background-color: #6c9aa7;
 }
  .noo-sh-title{
      font-size: 28px;
@@ -2610,8 +2626,119 @@
 .navbar {
     padding: 0px;
 }
+.slides-navigation a:hover {
+    background-color: transparent;
+}
 
 
+/* accordion start */
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #006994;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #006994;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #006994;
+    border: 1px solid #006994;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: #006994;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+.banner-frame {
+    box-shadow: 4px 4px #9a9999;
+}
+nav.navbar.bootsnav .navbar-brand {
+    float: left !important;
+}
 
 
 

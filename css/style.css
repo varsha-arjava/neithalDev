@@ -1565,8 +1565,8 @@
      color: #000000;
 }
  .about-box-main{
-     padding: 70px 0px;
-    background-color: #6c9aa7;
+     padding: 40px 0px;
+    /* background-color: #6c9aa7; */
 }
  .noo-sh-title{
      font-size: 28px;
@@ -2738,6 +2738,8 @@
 }
 nav.navbar.bootsnav .navbar-brand {
     float: left !important;
+    font-family: "Brush Script MT";
+    font-size: 30px;
 }
 
 
